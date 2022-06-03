@@ -21,7 +21,7 @@ int main(int argc, char **argv)
                 PQfinish(conn); 
                 exit(1); 
         } 
-        res = PQexec(conn, "NOTIFY kravchishina, 'Hello, process of Kirlan'"); 
+        res = PQexec(conn, "NOTIFY kravchishina, 'Hello, process of Kravchishina'"); 
         if (PQresultStatus(res) != PGRES_COMMAND_OK) 
         { 
                 fprintf(stderr, "NOTIFY Command failed: %s", PQerrorMessage(conn)); 
