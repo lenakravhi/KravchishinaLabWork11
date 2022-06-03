@@ -14,7 +14,7 @@ int main(int argc, char ** argv) {
                         fprintf(stderr, "Kravchishina semaphore_open error");
                         return 1;
                 }
-                printf("Fesenko sem_open. Kravchishina semaphore is taken.\nwaiting for it to be dropped.\n");
+                printf("Kravchishina sem_open. Kravchishina semaphore is taken.\nwaiting for it to be dropped.\n");
                 if (sem_wait(sem) < 0)
                         fprintf(stderr, "Kravchishina sem_wait error");
                 if (sem_close(sem) < 0)
